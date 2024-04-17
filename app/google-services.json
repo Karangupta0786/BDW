@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50113262536",
+    "project_id": "bdw-app",
+    "storage_bucket": "bdw-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50113262536:android:b22f2fc47006d3fbd6c6fd",
+        "android_client_info": {
+          "package_name": "com.example.bdwapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHqSfuOGqz6A4fxAg6BzbdYrWyUYO1O68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

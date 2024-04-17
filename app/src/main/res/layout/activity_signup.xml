@@ -50,7 +50,7 @@
         app:layout_constraintGuide_percent="0.45"/>
 
     <EditText
-        android:id="@+id/et_email_signup"
+        android:id="@+id/et_number_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/g1"
@@ -59,7 +59,7 @@
         android:background="@drawable/et_background"
         android:layout_marginTop="9dp"
         android:padding="9dp"
-        android:hint="enter the email"
+        android:hint="enter the number"
         android:ems="11"
         android:inputType="textEmailAddress"/>
 
@@ -67,7 +67,7 @@
         android:id="@+id/et_password_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_email_signup"
+        app:layout_constraintTop_toBottomOf="@id/et_number_signup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/et_background"
