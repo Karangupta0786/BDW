@@ -28,19 +28,19 @@
         app:layout_constraintTop_toBottomOf="@id/img_cow"/>
 
 
-    <EditText
-        android:id="@+id/et_name_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/g1"
-        android:background="@drawable/et_background"
-        android:inputType="textEmailAddress"
-        android:padding="9dp"
-        android:hint="enter the name"
-        android:ems="11"
-        />
+<!--    <EditText-->
+<!--        android:id="@+id/et_name_signup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/g1"-->
+<!--        android:background="@drawable/et_background"-->
+<!--        android:inputType="textEmailAddress"-->
+<!--        android:padding="9dp"-->
+<!--        android:hint="enter the name"-->
+<!--        android:ems="11"-->
+<!--        />-->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/g1"
@@ -53,7 +53,7 @@
         android:id="@+id/et_number_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/g1"
+        app:layout_constraintBottom_toTopOf="@id/g1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/et_background"
@@ -61,45 +61,60 @@
         android:padding="9dp"
         android:hint="enter the number"
         android:ems="11"
-        android:inputType="textEmailAddress"/>
+        android:inputType="number"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_password_signup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_number_signup"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:background="@drawable/et_background"-->
+<!--        android:layout_marginTop="9dp"-->
+<!--        android:padding="9dp"-->
+<!--        android:hint="enter the password"-->
+<!--        android:ems="11"-->
+<!--        android:inputType="numberPassword"/>-->
+<!--    <EditText-->
+<!--        android:id="@+id/et_password_repeat_signup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_password_signup"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:background="@drawable/et_background"-->
+<!--        android:layout_marginTop="9dp"-->
+<!--        android:padding="9dp"-->
+<!--        android:hint="Repeat the password"-->
+<!--        android:ems="11"-->
+<!--        android:inputType="numberPassword"/>-->
+
 
     <EditText
-        android:id="@+id/et_password_signup"
+        android:id="@+id/otp_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/card_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/et_background"
+        android:layout_marginTop="9dp"
+        android:padding="9dp"
+        android:hint="enter the OTP"
+        android:ems="11"
+        android:inputType="number"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/et_number_signup"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/et_background"
-        android:layout_marginTop="9dp"
-        android:padding="9dp"
-        android:hint="enter the password"
-        android:ems="11"
-        android:inputType="numberPassword"/>
-    <EditText
-        android:id="@+id/et_password_repeat_signup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_password_signup"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/et_background"
-        android:layout_marginTop="9dp"
-        android:padding="9dp"
-        android:hint="Repeat the password"
-        android:ems="11"
-        android:inputType="numberPassword"/>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/et_password_repeat_signup"
-        app:layout_constraintStart_toStartOf="parent"
         app:cardCornerRadius="9dp"
         app:cardElevation="2dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardBackgroundColor="@color/disable_button">
 
@@ -137,7 +152,6 @@
             android:text="Login"/>
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
