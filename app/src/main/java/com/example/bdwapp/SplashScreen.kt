@@ -5,16 +5,18 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.bdwapp.authentication.SignupActivity
 
 class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        val intent = Intent(this@SplashScreen,SignupActivity::class.java)
+        val intent = Intent(this@SplashScreen, SignupActivity::class.java)
 
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
             startActivity(intent)
+            finish()
         },3000)
 
     }
