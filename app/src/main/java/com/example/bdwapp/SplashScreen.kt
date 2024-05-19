@@ -14,6 +14,8 @@ class SplashScreen : AppCompatActivity() {
 
         val intent = Intent(this@SplashScreen, SignupActivity::class.java)
 
+        // TODO: Navigate directly to DASHBOARD If user is already logged in!
+
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
             startActivity(intent)
             finish()
